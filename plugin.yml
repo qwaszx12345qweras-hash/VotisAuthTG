@@ -1,0 +1,15 @@
+name: TelegramAuth
+version: '${project.version}'
+main: ru.твоё_имя.telegramauth.TelegramAuthPlugin
+api-version: '1.21'
+authors: [ ТвоёИмя ]
+description: Привязка аккаунта к Telegram и блокировка до подтверждения.
+commands:
+  link:
+    description: Получить код для привязки Telegram.
+    usage: /link
+    permission: telegramauth.link
+permissions:
+  telegramauth.link:
+    description: Разрешает использовать /link.
+    default: true
